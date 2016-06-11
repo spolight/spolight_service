@@ -11,6 +11,10 @@ import scrapy
 class SpoParserItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+	
+	# common info
+	url = scrapy.Field()
+	
 	# person info    
 	person_name = scrapy.Field()
 	age = scarpy.Field()
