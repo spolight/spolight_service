@@ -19,11 +19,7 @@ class DmozSpider(scrapy.Spider):
         response.xpath('//tr/td[@style="text-align:right;"]/a/text()').extract()
         print response.xpath('//tr/td[@style="text-align:right;"]/a/text()').extract()
         """
-        item = Teaminfo()
-        #item['team_id'] = response.xpath('//tr/td[@class="red"]/@onclick').re('class="LeaguesTitle".+class="LeaguesTitle"').extract()
-        item['team_id'] = response.css('tr.Leaguestitle::text') #|tr[index])
-#.re('class=\\"leaguesTitle\\".+class=\\"LeaguesTitle\\"').xpath('//tr/td[@class="red"]/@onclick');
-        yield item
+        print response.xpath('//tr/td[@class="red"]/@onclick').extract()
         #teamID_number DB extract
         
         """
