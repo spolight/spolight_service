@@ -1,6 +1,5 @@
 import scrapy
 from scrapy_splash import SplashRequest
-from teaminfo.items import Teaminfo
 
 class DmozSpider(scrapy.Spider):
     name = "teaminfo"
